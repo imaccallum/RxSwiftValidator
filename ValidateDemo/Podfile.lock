@@ -1,0 +1,37 @@
+PODS:
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxOptional (3.2.0):
+    - RxCocoa
+    - RxSwift
+  - RxSwift (3.6.1)
+  - SwiftValidator (4.0.0)
+  - SwiftValidators (6.0.0)
+
+DEPENDENCIES:
+  - RxCocoa
+  - RxOptional
+  - RxSwift
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+  - SwiftValidators
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :branch: master
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :commit: 6cff6cac3e02a617f7cf11323e18526a117d5673
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+SPEC CHECKSUMS:
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxOptional: d2d6a68064bc16b4801332c40663967f481b0234
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
+  SwiftValidators: 4ccbec749f61a36f7a922781bb09452e80cde396
+
+PODFILE CHECKSUM: d4b2f9539d0d64573d636377245e8f5230432c60
+
+COCOAPODS: 1.3.1

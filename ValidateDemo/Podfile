@@ -1,0 +1,11 @@
+
+target 'ValidateDemo' do
+
+  use_frameworks!
+  pod 'RxSwift' 
+  pod 'RxCocoa'
+  pod 'RxOptional'
+  pod 'SwiftValidators'
+  pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
+
+end

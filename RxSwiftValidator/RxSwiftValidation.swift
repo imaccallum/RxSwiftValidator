@@ -155,6 +155,17 @@ public extension ObservableType where E: Validatable {
 
 
 public extension Observable where Element: ValidationResultType, Element.ValueType: Validatable {
+    
+    func isValid() -> Observable<Bool> {
+        return self.flatMap { result -> Observable<Bool> in
+            if result.errorMessages == nil {
+                return .just(true)
+            } else {
+                return .just(false)
+            }
+        }
+    }
+    
 	func onValid() -> Observable<Element.ValueType> {
 		return self.flatMap { result -> Observable<Element.ValueType> in
 			if result.errorMessages == nil {
